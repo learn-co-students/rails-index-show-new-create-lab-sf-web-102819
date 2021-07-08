@@ -1,0 +1,15 @@
+<h1>Index Page</h1>
+
+<div>
+  <% @coupons.each do |coupon| %>
+    <%= link_to 'FREESTUFF', coupon_path(coupon) %>
+
+    <p><strong>Store: </strong><%= coupon.store %></p>
+   
+    <p><strong>Coupon Code: </strong><%= coupon.coupon_code %></p>
+
+    <br />
+  <% end %>
+</div>
+
+  
